@@ -1,7 +1,10 @@
 //
 // Base styles
 //
-
+.color-bg-btn{
+  background-color: $mypurple;
+  border: $mypurple;
+}
 .card {
   @extend .text-light !optional;
   @extend .bg-dark !optional;
@@ -51,6 +54,10 @@
   flex: 1 1 auto;
   padding: $card-spacer-y $card-spacer-x;
   color: $card-color;
+}
+
+.card-body a{
+  @extend .color-bg-btn;
 }
 
 .card-title {
